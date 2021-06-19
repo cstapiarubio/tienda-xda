@@ -1,0 +1,23 @@
+//section tienda 
+.main_store{
+    &_h1, &_h5, &_h4, label{
+        font-family: $old;
+    }
+    &_h1{
+        font-weight: $bold;
+        font-size: $xxx-large;
+    }
+    &_news_div1{
+            background-color: $smokyblack;
+    }
+    &_h4, label{
+            color: $white;
+    }
+    &go_p{
+        font-family: $raleway;
+        font-size: $medium;
+        font-weight: $regular;
+    }
+}
+
+
