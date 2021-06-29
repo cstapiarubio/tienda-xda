@@ -1,9 +1,113 @@
 .navbar{
-    &-brand{
+    &_divlogo{
         background-color: $smokyblack;
-        width: 5%;
+        position: absolute;
+        top:0;
+        left:0;
+        width: 30%;
+        height: 70px;
+        text-align: center;
+        @include for-desktop-up{
+            width: 10%;
+            height: 60px;
+        }
+        @include for-tablet-landscape-up{
+            width: 15%;
+            height: 66px;
+        }
+        @include for-tablet-portrait-up{
+            width: 15%;
+            //height: 60px;
+        }
     }
+    &-brand{
+        margin-top: 10%;
+    }
+
     span{
         color: $white;
+        font-weight: $bold;
+        font-size: $xx-large;
+        font-family: $old;
     }
+    .nav_list_a{
+        font-weight: $bold;
+        font-size: $large;
+        font-family: $raleway;
+    }
+    .nav_list{
+        @include for-tablet-portrait-up{
+            display:flex;
+            flex-direction: row;
+            }
+        @include for-tablet-landscape-up{
+            display:flex;
+            flex-direction: row;
+          }
+        @include for-desktop-up{
+            display:flex;
+            flex-direction: row;
+        }
+
+    }
+    &-toggler{
+        cursor: pointer;
+        @include for-tablet-portrait-up{
+            display:none;
+          }
+        @include for-tablet-landscape-up{
+            display:none;
+          }
+        @include for-desktop-up{
+            display:none;
+        }
+
+    }
+    &-nav{
+        display: block;
+        text-align: center;
+        @include for-tablet-portrait-up{
+            display:flex;
+            flex-direction: row;
+           justify-content: space-between;
+          }
+        @include for-tablet-landscape-up{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+    }
+    .nav-link{
+        @include for-tablet-portrait-up{
+           justify-content: space-between;
+          }
+        @include for-tablet-landscape-up{
+            justify-content: space-between;
+          }
+    }
+    &-toggler:checked {
+        display:block;
+        @include for-tablet-portrait-up{
+            display:none;
+          }
+        @include for-tablet-landscape-up{
+          display:none;
+        } 
+        @include for-desktop-up{
+            display: none;
+        }   
+    }
+    .collapse:not(.show){
+        @include for-tablet-portrait-up{
+            display:block;
+            justify-content: space-between;
+            padding-left: 40%;
+          }
+        @include for-tablet-landscape-up{
+            display:block;
+            justify-content: space-between;
+            padding-left: 40%;
+        } 
+    }
+
 }

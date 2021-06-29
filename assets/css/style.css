@@ -10735,16 +10735,168 @@ textarea.form-control-lg {
   border: 0;
 }
 
-.navbar-brand {
+.row {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.navbar_divlogo {
   background-color: #0c0910;
-  width: 5%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 70px;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .navbar_divlogo {
+    width: 10%;
+    height: 60px;
+  }
+}
+@media (min-width: 900px) and (max-width: 1199px) {
+  .navbar_divlogo {
+    width: 15%;
+    height: 66px;
+  }
+}
+@media (min-width: 600px) and (max-width: 899px) {
+  .navbar_divlogo {
+    width: 15%;
+  }
+}
+.navbar-brand {
+  margin-top: 10%;
 }
 .navbar span {
   color: #FFF;
+  font-weight: 700;
+  font-size: 30px;
+  font-family: "Old Standard TT", serif;
+}
+.navbar .nav_list_a {
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+}
+@media (min-width: 600px) and (max-width: 899px) {
+  .navbar .nav_list {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 900px) and (max-width: 1199px) {
+  .navbar .nav_list {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar .nav_list {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.navbar-toggler {
+  cursor: pointer;
+}
+@media (min-width: 600px) and (max-width: 899px) {
+  .navbar-toggler {
+    display: none;
+  }
+}
+@media (min-width: 900px) and (max-width: 1199px) {
+  .navbar-toggler {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar-toggler {
+    display: none;
+  }
+}
+.navbar-nav {
+  display: block;
+  text-align: center;
+}
+@media (min-width: 600px) and (max-width: 899px) {
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 900px) and (max-width: 1199px) {
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 600px) and (max-width: 899px) {
+  .navbar .nav-link {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 900px) and (max-width: 1199px) {
+  .navbar .nav-link {
+    justify-content: space-between;
+  }
+}
+.navbar-toggler:checked {
+  display: block;
+}
+@media (min-width: 600px) and (max-width: 899px) {
+  .navbar-toggler:checked {
+    display: none;
+  }
+}
+@media (min-width: 900px) and (max-width: 1199px) {
+  .navbar-toggler:checked {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar-toggler:checked {
+    display: none;
+  }
+}
+@media (min-width: 600px) and (max-width: 899px) {
+  .navbar .collapse:not(.show) {
+    display: block;
+    justify-content: space-between;
+    padding-left: 40%;
+  }
+}
+@media (min-width: 900px) and (max-width: 1199px) {
+  .navbar .collapse:not(.show) {
+    display: block;
+    justify-content: space-between;
+    padding-left: 40%;
+  }
 }
 
 .header_img {
   width: 100%;
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  .col-lg-7 {
+    width: 100% !important;
+  }
+}
+@media (min-width: 600px) and (max-width: 899px) {
+  .col-lg-7 {
+    width: 100% !important;
+  }
+}
+
+.btn {
+  border-color: #0c0910;
+  font-weight: 700;
+  font-size: 20px;
+  border: 2px solid;
 }
 
 .btn:hover {
@@ -10756,6 +10908,15 @@ textarea.form-control-lg {
   border-color: #d1d1d1 !important;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1200px) {
+  .main {
+    flex-direction: row-reverse;
+  }
+}
 .main_store_h1, .main_store_h5, .main_store_h4, .main_store label {
   font-family: "Old Standard TT", serif;
 }
@@ -10769,10 +10930,26 @@ textarea.form-control-lg {
 .main_store_h4, .main_store label {
   color: #FFF;
 }
-.main_storego_p {
+.main_store_go_p {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 400;
+}
+.main_store_h5 {
+  writing-mode: vertical-lr;
+  transform: rotate(360deg);
+  text-align: center;
+  font-weight: 700;
+}
+@media (min-width: 900px) and (max-width: 1199px) {
+  .main .col-lg-5 {
+    width: 100% !important;
+  }
+}
+@media (min-width: 600px) and (max-width: 899px) {
+  .main .col-lg-5 {
+    width: 100% !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

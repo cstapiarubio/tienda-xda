@@ -20,8 +20,10 @@
     <!--Nav-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><span>XDA</span></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="navbar_divlogo"> 
+            <a class="navbar-brand" href="#"><span>XDA</span></a>
+          </div>
+          <button class="navbar-toggler ms-auto justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="nav_bloque collapse navbar-collapse ms-auto justify-content-end" id="navbarSupportedContent">
@@ -42,21 +44,21 @@
         </div>
       </nav> 
       <!--main--> 
-    <section class="main container row">
+    <section class="main row">
         <!--header-->
-        <header class="main_header col-sm-12 col-md-12 col-lg-7 container">
+        <header class="main_header col-sm-12 col-md-12 col-lg-7">
             <img class="header_img img-fluid" src="assets/img/imagen1.png"> 
         </header>
 
         <!--Section ir a tienda-->
-        <section class="main_store container col-sm-12 col-md-12 col-lg-5">
-            <article class="main_store_go px-5">
+        <section class="main_store container-fluid col-sm-12 col-md-12 col-lg-5">
+            <article class="main_store_go p-5 container-fluid">
                 <h1 class="main_store_h1">LOREM IPSUM AD VALOREM</h1>
-                <p class="main_store_go_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc justo erat, sodales sit amet sollicitudin ac, consectetur ut ligula. Curabitur lobortis convallis eros consectetur pulvinar.Nunc luctus nec elit consequat posuere. Quisque tincidunt convallis orci quis blandit. Etiam eu diam ultricies, pellentesque magna eget, laoreet ante. Aenean sed quam tellus. Aliquam libero magna, tincidunt at massa nec, mattis ultrices magna. Praesent non elit tempor, consequat sem quis, fringilla enim.</p>
+                <p class="main_store_go_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc justo erat, sodales sit amet sollicitudin ac, consectetur ut ligula. Curabitur lobortis convallis eros consectetur pulvinar.Nunc luctus nec elit consequat posuere. Quisque tincidunt convallis orci quis blandit. Etiam eu diam ultricies, pellentesque magna eget, laoreet ante. Aenean sed quam tellus.</p>
                 <button type="button" class="main_store_button btn btn-light border-dark btn-sm px-3">Ir a tienda</button>
             </article>
             <article class="main_store_news row">
-                <div class="main_store_news_div1 col-10">
+                <div class="main_store_news_div1 col-10 px-5 py-4">
                     <h4 class="main_store_h4">Newsletter</h4>
                     <form class="main_store_form">
                         <div class="form-group">
@@ -65,8 +67,8 @@
                         </div>
                     </form>
                 </div>
-                <div class="main_store_news_div2 col-2">
-                    <h5 class="main_store_h5">Suscribir</h5>
+                <div class="main_store_news_div2 col-2 container-fluid">
+                    <h5 class="main_store_h5 pt-5">Suscribir</h5>
                 </div>
             </article>
         </section>

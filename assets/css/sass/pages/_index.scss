@@ -1,0 +1,53 @@
+//section tienda 
+.main{
+    display:flex;
+    flex-direction: column;
+    @include for-tablet-portrait-up{
+        
+    }
+    @include for-tablet-landscape-up{
+    
+    }
+    @include for-desktop-up{
+        flex-direction: row-reverse;
+    }
+    &_store{
+        &_h1, &_h5, &_h4, label{
+            font-family: $old;
+        }
+        &_h1{
+            font-weight: $bold;
+            font-size: $xxx-large;
+        }
+        &_news_div1{
+                background-color: $smokyblack;
+        }
+        &_h4, label{
+                color: $white;
+        }
+        &_go_p{
+            font-family: $raleway;
+            font-size: $medium;
+            font-weight: $regular;
+        }
+        &_h5{
+            writing-mode: vertical-lr;
+            transform: rotate(360deg);
+            text-align:center;
+            font-weight: $bold;
+        }
+    }
+    .col-lg-5{
+        @include for-tablet-landscape-up{
+            width: 100% !important;
+        }
+        @include for-tablet-portrait-up{
+            width: 100% !important;
+        }
+        
+    }
+
+}
+
+
+
